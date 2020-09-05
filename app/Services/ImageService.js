@@ -8,11 +8,13 @@ class ImageService {
 
     }
 
-    async getImage {
-    let res = await api.get("image")
-    ProxyState.image = res.data.url
+    async getImage() {
+        console.log("[Image Info Here]")
+        let res = await api.get("images")
+        ProxyState.image = new Image(res.data.url)
+
+    }
 }
- }
 
 const imageService = new ImageService();
 export default imageService;
