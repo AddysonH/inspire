@@ -1,7 +1,6 @@
 import TodoController from "./controllers/TodoController.js";
 import WeatherController from "./controllers/WeatherController.js";
 import QuoteController from "./Controllers/QuoteController.js";
-import imageController from "./Controllers/ImageController.js"
 import ImageController from "./Controllers/ImageController.js";
 
 //TODO Dont forget to register all your controllers	

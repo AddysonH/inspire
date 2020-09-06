@@ -5,13 +5,12 @@ import { ProxyState } from "../AppState.js"
 
 class ImageService {
     constructor() {
-
     }
 
     async getImage() {
-        console.log("[Image Info Here]")
+        console.log("[Image Info]")
         let res = await api.get("images")
-        ProxyState.image = new Image(res.data.url)
+        ProxyState.image = res.data.url
 
     }
 }

@@ -5,10 +5,9 @@ import imageService from "../Services/ImageService.js"
 import { ProxyState } from "../AppState.js";
 
 function _drawImage() {
-    let image = ProxyState.image
-    console.log("Image here", image)
-    document.getElementById("bg-img").style.backgroundImage = `url(${image})`
-
+    console.log("Image here", ProxyState.image)
+    //document.body.style.backgroundImage = `${ProxyState.image.image}`
+    document.getElementById("bg-img").style.backgroundImage = `url(${ProxyState.image})`
 }
 
 export default class ImageController {
