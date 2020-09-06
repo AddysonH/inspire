@@ -29,14 +29,14 @@
         <div class="row">
             <div class="col-3 card">
                 <h1>ToDo</h1>
-                <form>
-                    <div id="todo-items">
+                <div id="todo-items"></div>
 
+                <form onsubmit="app.todoController.addTodo(event)">
+                    <input type="text" name="listItem" id="listItem">
+                    <button type="submit">Add</button>
                 </form>
 
             </div>
-        </div>
-        </div>
 
     </main>
     <footer class="container-fluid bg-transparent text-light">
